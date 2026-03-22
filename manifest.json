@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "GenPark Auto-Deal Finder",
+  "version": "1.1.0",
+  "description": "Automatically scans e-commerce pages to find arbitrage opportunities via the GenPark discovery engine.",
+  "permissions": ["activeTab", "scripting", "storage", "alarms"],
+  "host_permissions": ["*://*.amazon.com/*", "*://*.ebay.com/*", "https://api.genpark.ai/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.amazon.com/*", "*://*.ebay.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

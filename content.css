@@ -1,0 +1,35 @@
+.genpark-flash-banner {
+    background: linear-gradient(90deg, #000000 0%, #333333 100%);
+    color: #ffffff;
+    padding: 15px 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #444;
+}
+.genpark-flash-text {
+    font-size: 14px;
+    line-height: 1.4;
+}
+.genpark-flash-text strong {
+    color: #4CAF50;
+    font-size: 16px;
+}
+.genpark-action-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.2s;
+}
+.genpark-action-btn:hover {
+    background-color: #45a049;
+}

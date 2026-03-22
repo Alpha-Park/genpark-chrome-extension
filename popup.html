@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body { width: 320px; padding: 15px; font-family: 'Inter', sans-serif; background-color: #fafafa; margin: 0; }
+    .header { display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 10px; }
+    .header h2 { margin: 0; font-size: 18px; color: #000; }
+    .status-dot { height: 10px; width: 10px; background-color: #4CAF50; border-radius: 50%; display: inline-block; }
+    .deal-card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 12px; margin-bottom: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .deal-card h3 { margin: 0 0 5px 0; font-size: 14px; color: #333; }
+    .deal-price { color: #e91e63; font-weight: bold; font-size: 16px; margin: 5px 0; }
+    .genpark-price { color: #4CAF50; font-weight: bold; font-size: 16px; margin: 5px 0; }
+    button { background: #000; color: #fff; border: none; padding: 8px 12px; width: 100%; border-radius: 4px; font-weight: bold; cursor: pointer; transition: 0.2s; }
+    button:hover { background: #333; }
+    .footer { font-size: 11px; color: #888; text-align: center; margin-top: 15px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>🛍️ GenPark Sync</h2>
+    <span class="status-dot" title="Agent Online"></span>
+  </div>
+  
+  <div id="deals-container">
+    <div style="text-align:center; color:#666; font-size: 13px;">Scanning active tab for arbitrage opportunities...</div>
+  </div>
+
+  <div class="footer">Powered by GenPark Multi-Agent Network</div>
+  <script src="popup.js"></script>
+</body>
+</html>
